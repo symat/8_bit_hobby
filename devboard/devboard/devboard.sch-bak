@@ -1,0 +1,66 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L rapsberry_pi_gpio_connector_(40_pin):Rapsberry_PI_GPIO_connector_(40_pin) J?
+U 1 1 6009C771
+P 1700 2050
+F 0 "J?" H 1300 3175 50  0000 C CNN
+F 1 "Rapsberry_PI_GPIO_connector_(40_pin)" H 1300 3084 50  0000 C CNN
+F 2 "" H 1250 2050 50  0001 C CNN
+F 3 "~" H 1250 2050 50  0001 C CNN
+	1    1700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:MCP23S17_SP U?
+U 1 1 600A4952
+P 5100 2250
+F 0 "U?" H 5100 3531 50  0000 C CNN
+F 1 "MCP23S17_SP" H 5100 3440 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 5300 1250 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5300 1150 50  0001 L CNN
+	1    5100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:MCP23S17_SP U?
+U 1 1 600A7046
+P 5500 4450
+F 0 "U?" H 5500 5731 50  0000 C CNN
+F 1 "MCP23S17_SP" H 5500 5640 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 5700 3450 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5700 3350 50  0001 L CNN
+	1    5500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_LevelTranslator:TXB0108DQSR U?
+U 1 1 6005F73D
+P 3200 1650
+F 0 "U?" H 3200 861 50  0000 C CNN
+F 1 "TXB0108DQSR" H 3200 770 50  0000 C CNN
+F 2 "Package_SON:USON-20_2x4mm_P0.4mm" H 3200 900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3200 1550 50  0001 C CNN
+	1    3200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4100 3250 4350
+Wire Wire Line
+	3250 4350 3850 4350
+Wire Wire Line
+	1150 4100 3250 4100
+$EndSCHEMATC
